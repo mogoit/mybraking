@@ -1,0 +1,3 @@
+my_braking_back_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MyBrakingBackBundle:Default:index }

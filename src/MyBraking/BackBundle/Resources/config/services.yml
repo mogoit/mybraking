@@ -1,0 +1,7 @@
+parameters:
+#    my_braking_back.example.class: MyBraking\BackBundle\Example
+
+services:
+#    my_braking_back.example:
+#        class: %my_braking_back.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
