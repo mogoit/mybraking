@@ -17,6 +17,7 @@ DirectoryIndex app.php
     # the following 2 lines to eliminate the overhead.
     RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
     RewriteRule ^(.*) - [E=BASE:%1]
+    RewriteBase /www/web/
 
     # Sets the HTTP_AUTHORIZATION header removed by apache
     RewriteCond %{HTTP:Authorization} .
