@@ -1,3 +1,20 @@
 mybraking_back_homepage:
     path:     /
     defaults: { _controller: MyBrakingBackBundle:Default:index }
+
+mybraking_back_user:
+    path:     /user
+    defaults: { _controller: MyBrakingBackBundle:Default:user }
+
+mybraking_back_bracket:
+    path:     /bracket
+    defaults: { _controller: MyBrakingBackBundle:Default:bracket }
+
+# For authentication
+mybraking_back_login:
+    path:     /login
+    defaults: { _controller: MyBrakingBackBundle:Default:login }
+
+mybraking_back_logout:
+    path:     /logout
+    defaults: { _controller: MyBrakingBackBundle:Default:logout }
