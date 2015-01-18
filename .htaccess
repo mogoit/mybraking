@@ -1,6 +1,8 @@
-# invoke rewrite engine
+<IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /www/web/
 
-# add trailing slash if missing
-    rewriteRule ^(([a-z0-9\-]+/)*[a-z0-9\-]+)$ $1/ [NC,R=301,L]
+    RewriteBase /web
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ app.php [QSA,L]
+</IfModule>
