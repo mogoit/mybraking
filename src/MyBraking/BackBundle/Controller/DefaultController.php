@@ -10,4 +10,25 @@ class DefaultController extends Controller
     {
         return $this->render('MyBrakingBackBundle:Default:index.html.twig');
     }
+
+    public function userAction()
+    {
+        return $this->render('MyBrakingBackBundle:Default:user.html.twig');
+    }
+
+    public function bracketAction()
+    {
+        return $this->render('MyBrakingBackBundle:Default:bracket.html.twig');
+    }
+
+    public function loginAction()
+    {
+        // this action is managed by another controller
+        return $this->forward('MyBrakingBackBundle:Auth:login');
+    }
+
+    public function logoutAction()
+    {
+    //
+    }
 }
